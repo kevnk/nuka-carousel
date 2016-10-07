@@ -55,6 +55,16 @@ Now, you can access the application on  your localhost at following url: <a href
 
 Hook to be called after a slide is changed.
 
+####autoplay
+`React.PropTypes.bool`
+
+Autoplay mode active. Defaults to false.
+
+####autoplayInterval
+`React.PropTypes.number`
+
+Interval for autoplay iteration. Defaults to 3000.
+
 ####beforeSlide
 `React.PropTypes.func`
 
@@ -119,7 +129,10 @@ Animation easing function. See valid easings here: [https://github.com/chenglou/
 
 Used to set the margin of the slider frame. Accepts any string dimension value such as `"0px 20px"` or `"500px"`.
 
-Enable mouse swipe/dragging
+####frameOverflow
+`React.PropTypes.string`
+
+Used to set overflow style property on slider frame. Defaults to `hidden`.
 
 ####edgeEasing
 `React.PropTypes.string`
@@ -176,6 +189,11 @@ Enable the slides to transition vertically.
 `React.PropTypes.string`
 
 Used to hardcode the slider width. Accepts any string dimension value such as `"80%"` or `"500px"`.
+
+####wrapAround
+`React.PropTypes.bool`
+
+Sets infinite wrapAround mode. Defaults to `false`
 
 ###ControllerMixin
 
